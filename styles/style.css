@@ -1,3 +1,27 @@
+/* Reset values to get rid of browser's pre-set values*/
+
+body,
+body * {
+    margin: unset;
+    box-sizing: border-box;
+    padding: unset;
+    font-size: unset;
+    color: unset;
+    text-decoration: unset;
+}
+
+/* CSS for debugging*/
+
+body * {
+    border: 1px solid red;
+}
+
+main {
+    height: 1000px;
+    background-color: dimgray;
+}
+
+
 /* CSS for divs colours*/
 
 .topBox--color, .midBox--color, .bottomBox--color {
