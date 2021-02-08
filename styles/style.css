@@ -67,3 +67,12 @@ main {
 .bottomBox__row--color {
     background-color: #8F6D1C;
 }
+
+/* Flex to Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;    
+}
