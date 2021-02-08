@@ -97,6 +97,10 @@ main {
     height: 6rem;
 }
 
+.topBox__r1 {
+    margin-bottom: 1rem;
+}
+
 /* Flexbox topBox and its elements */
 
 .topBox {
