@@ -102,7 +102,12 @@ main {
 }
 
 .topBox__r1Item {
-    width: 30%;
+    width: 15%;
+    height: 2rem;
+}
+
+.topBox__r1ItemM {
+    width: 60%;
     height: 2rem;
 }
 
@@ -123,6 +128,7 @@ main {
     justify-content:space-evenly;
     align-items: center;
 }
+
 
 
 
