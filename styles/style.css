@@ -1,0 +1,45 @@
+/* CSS for divs colours*/
+
+.topBox--color, .midBox--color, .bottomBox--color {
+    background-color: #000000;
+}
+
+.topBox__r1--color {
+    background-color: #2D4059;
+}
+
+.topBox__r1Item--color {
+    background-color: #EA5455;
+}
+
+.topBox__r2--color {
+    background-color: #F07B3F;
+}
+
+.topBox__r2Item--color {
+    background-color: #FED460;
+}
+
+.midBox__r1--color {
+    background-color: #4E4E6A;
+}
+
+.midBox__r1Item--color {
+    background-color: #1F6CB0;
+}
+
+.midBox__r1LastI--color {
+    background-color: #70A3C4;
+}
+
+.midBox__r2--color {
+    background-color: #F73F52;
+}
+
+.midBox__r2Item--color {
+    background-color: #FEEA85;
+}
+
+.bottomBox__row--color {
+    background-color: #8F6D1C;
+}
