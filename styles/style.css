@@ -101,6 +101,11 @@ main {
     margin-bottom: 1rem;
 }
 
+.topBox__r1Item {
+    width: 30%;
+    height: 2rem;
+}
+
 /* Flexbox topBox and its elements */
 
 .topBox {
