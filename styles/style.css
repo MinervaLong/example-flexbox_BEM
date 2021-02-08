@@ -77,7 +77,7 @@ main {
     justify-content: space-evenly;    
 }
 
-/* Size of the three principal divs */
+/* Size of the three principal divs and its elements */
 
 .topBox, .midBox,.bottomBox {
     width: 95%;
@@ -88,6 +88,11 @@ main {
 }
 
 .bottomBox {
+    height: 6rem;
+}
+
+.topBox__r1, .topBox__r2 {
+    width: 95%;
     height: 6rem;
 }
 
