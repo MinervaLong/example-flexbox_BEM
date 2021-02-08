@@ -76,3 +76,17 @@ main {
     flex-wrap: nowrap;
     justify-content: space-evenly;    
 }
+
+/* Size of the three principal divs */
+
+.topBox, .midBox,.bottomBox {
+    width: 95%;
+}
+
+.topBox, .midBox {
+    height: 25rem;
+}
+
+.bottomBox {
+    height: 6rem;
+}
