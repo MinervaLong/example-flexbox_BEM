@@ -90,3 +90,16 @@ main {
 .bottomBox {
     height: 6rem;
 }
+
+/* Flexbox topBox and its elements */
+
+.topBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
