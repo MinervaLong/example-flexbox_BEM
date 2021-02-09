@@ -111,6 +111,11 @@ main {
     height: 2rem;
 }
 
+.topBox__r2Item {
+    width: 80%;
+    height: 2rem;
+}
+
 /* Flexbox topBox and its elements */
 
 .topBox {
@@ -128,6 +133,8 @@ main {
     justify-content:space-evenly;
     align-items: center;
 }
+
+
 
 
 
