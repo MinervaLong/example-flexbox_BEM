@@ -113,7 +113,7 @@ main {
     height: 2rem;
 }
 
-.topBox__r2Item, .bottomBox__row {
+.topBox__r2Item, .bottomBox__row { /* bottomBox too */
     width: 95%;
     height: 2rem;
 }
@@ -156,7 +156,7 @@ main {
     align-items: center;
 }
 
-.topBox__r1, .topBox__r2, .bottomBox {
+.topBox__r1, .topBox__r2, .bottomBox { /* bottomBox too*/
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -194,12 +194,12 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .midBox__r2Item {
-
+    margin-top: 1.5rem;
 }
 
 
