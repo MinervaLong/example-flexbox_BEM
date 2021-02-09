@@ -74,6 +74,140 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
     align-items: center;    
 }
+
+/* Size of the three principal divs and its elements */
+
+.topBox, .midBox,.bottomBox {
+    width: 95%;
+}
+
+.topBox, .midBox {
+    height: 25rem;
+}
+
+.bottomBox {
+    height: 6rem;
+}
+
+/* topBox */
+
+.topBox__r1, .topBox__r2 {
+    width: 95%;
+    height: 6rem;
+}
+
+.topBox__r1 {
+    margin-bottom: 1rem;
+}
+
+.topBox__r1Item {
+    width: 15%;
+    height: 2rem;
+}
+
+.topBox__r1ItemM {
+    width: 60%;
+    height: 2rem;
+}
+
+.topBox__r2Item, .bottomBox__row { /* bottomBox too */
+    width: 95%;
+    height: 2rem;
+}
+
+/* midBox */
+
+.midBox__r1 {
+    width: 60%;
+    height: 22rem;
+    margin-right: 1.5rem;
+}
+
+.midBox__r2 {
+    width: 35%;
+    height: 22rem;
+}
+
+.midBox__r1Item {
+    width: 40%;
+    height: 2rem;
+}
+
+.midBox__r1LastI {
+    width: 90%;
+    height: 2rem;
+}
+
+.midBox__r2Item {
+    width: 90%;
+    height: 2rem;
+}
+
+/* Flexbox topBox and its elements */
+
+.topBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBox__r1, .topBox__r2, .bottomBox { /* bottomBox too*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+/* Flexbox midBox and its elements */
+
+.midBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.midBox__r1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.midBox__r1Item {
+
+}
+
+.midBox__r1LastI {
+    
+}
+
+.midBox__r2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.midBox__r2Item {
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+       
+
