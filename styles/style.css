@@ -92,6 +92,8 @@ main {
     height: 6rem;
 }
 
+/* topBox */
+
 .topBox__r1, .topBox__r2 {
     width: 95%;
     height: 6rem;
@@ -114,6 +116,13 @@ main {
 .topBox__r2Item {
     width: 95%;
     height: 2rem;
+}
+
+/* midBox */
+
+.midBox__r1 {
+    width: 70%;
+    height: 25rem;
 }
 
 /* Flexbox topBox and its elements */
