@@ -123,11 +123,27 @@ main {
 .midBox__r1 {
     width: 60%;
     height: 22rem;
+    margin-right: 1.5rem;
 }
 
 .midBox__r2 {
     width: 35%;
     height: 22rem;
+}
+
+.midBox__r1Item {
+    width: 40%;
+    height: 2rem;
+}
+
+.midBox__r1LastI {
+    width: 90%;
+    height: 2rem;
+}
+
+.midBox__r2Item {
+    width: 90%;
+    height: 2rem;
 }
 
 /* Flexbox topBox and its elements */
