@@ -1,7 +1,11 @@
 /* Reset values to get rid of browser's pre-set values*/
 
-body,
-body * {
+html,body{
+    height: 100%;
+    
+}
+
+ * {
     margin: unset;
     box-sizing: border-box;
     padding: unset;
@@ -14,13 +18,8 @@ body * {
 
 body * {
     border: 1px solid red;
-}
-
-main {
-    height: 1000px;
     background-color: dimgray;
 }
-
 
 /* CSS for divs colours*/
 
