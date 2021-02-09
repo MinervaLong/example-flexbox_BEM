@@ -129,15 +129,6 @@ main {
     margin-right: 1.7rem;
 }
 
-/*.midBox__r1container {
-    width: 90%;
-    height: 10.4rem;
-}
-
-.midBox__r1container--left, .midBox__r1container--right {
-    width: 50%;
-}*/
-
 .midBox__r2 {
     width: 35%;
     height: 14rem;
@@ -160,6 +151,7 @@ main {
 .midBox__r2Item {
     width: 90%;
     height: 2rem;
+    margin-top: 0.9rem;
 }
 
 /* Flexbox topBox and its elements */
@@ -206,23 +198,6 @@ main {
     align-items: center;
 }
 
-/*.midBox__r1container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.midBox__r1container--left, .midBox__r1container--right {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}*/
-
-
-
 .midBox__r2 {
     display: flex;
     flex-direction: column;
@@ -231,9 +206,7 @@ main {
     align-items: center;
 }
 
-.midBox__r2Item {
-    margin-top: 1.5rem;
-}
+
 
 
 
