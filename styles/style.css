@@ -1,7 +1,11 @@
 /* Reset values to get rid of browser's pre-set values*/
 
-body,
-body * {
+html,body, main{
+    height: 100%;
+    
+}
+
+* {
     margin: unset;
     box-sizing: border-box;
     padding: unset;
@@ -14,13 +18,8 @@ body * {
 
 body * {
     border: 1px solid red;
-}
-
-main {
-    height: 1000px;
     background-color: dimgray;
 }
-
 
 /* CSS for divs colours*/
 
@@ -84,8 +83,12 @@ main {
     width: 95%;
 }
 
-.topBox, .midBox {
-    height: 25rem;
+.topBox {
+    height: 14rem;
+}
+
+.midBox {
+    height: 17rem;
 }
 
 .bottomBox {
@@ -95,8 +98,8 @@ main {
 /* topBox */
 
 .topBox__r1, .topBox__r2 {
-    width: 95%;
-    height: 6rem;
+    width: 97%;
+    height: 5rem;
 }
 
 .topBox__r1 {
@@ -104,7 +107,7 @@ main {
 }
 
 .topBox__r1Item {
-    width: 15%;
+    width: 17%;
     height: 2rem;
 }
 
@@ -114,7 +117,7 @@ main {
 }
 
 .topBox__r2Item, .bottomBox__row { /* bottomBox too */
-    width: 95%;
+    width: 97%;
     height: 2rem;
 }
 
@@ -122,22 +125,30 @@ main {
 
 .midBox__r1 {
     width: 60%;
-    height: 22rem;
-    margin-right: 1.5rem;
+    height: 14rem;
+    margin-right: 1.7rem;
+}
+
+.midBox__r1container {
+    width: 90%;
+    height: 10.4rem;
+}
+
+.midBox__r1container--left, .midBox__r1container--right {
+    width: 50%;
 }
 
 .midBox__r2 {
     width: 35%;
-    height: 22rem;
+    height: 14rem;
 }
 
 .midBox__r1Item {
-    width: 40%;
     height: 2rem;
 }
 
 .midBox__r1LastI {
-    width: 90%;
+    width: 97%;
     height: 2rem;
 }
 
@@ -176,19 +187,28 @@ main {
 
 .midBox__r1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.midBox__r1Item {
-
+.midBox__r1container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.midBox__r1LastI {
-    
+.midBox__r1container--left, .midBox__r1container--right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
+
+
 
 .midBox__r2 {
     display: flex;
