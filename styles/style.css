@@ -121,8 +121,13 @@ main {
 /* midBox */
 
 .midBox__r1 {
-    width: 70%;
-    height: 25rem;
+    width: 60%;
+    height: 22rem;
+}
+
+.midBox__r2 {
+    width: 35%;
+    height: 22rem;
 }
 
 /* Flexbox topBox and its elements */
