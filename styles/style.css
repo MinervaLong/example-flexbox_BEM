@@ -1,16 +1,13 @@
 /* Reset values to get rid of browser's pre-set values*/
 
-* {
+body,
+body * {
     margin: unset;
     box-sizing: border-box;
     padding: unset;
     font-size: unset;
     color: unset;
     text-decoration: unset;
-}
-
-html, body {
-    height: 100%;
 }
 
 /* CSS for debugging*/
@@ -135,7 +132,7 @@ main {
 }
 
 .midBox__r1container--left, .midBox__r1container--right {
-    height: 36%;
+    width: 48%;
 }
 
 .midBox__r2 {
@@ -200,6 +197,15 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+
+.midBox__r1container--left, .midBox__r1container--right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
 
 .midBox__r2 {
     display: flex;
