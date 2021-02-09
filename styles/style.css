@@ -1,13 +1,16 @@
 /* Reset values to get rid of browser's pre-set values*/
 
-body,
-body * {
+* {
     margin: unset;
     box-sizing: border-box;
     padding: unset;
     font-size: unset;
     color: unset;
     text-decoration: unset;
+}
+
+html, body {
+    height: 100%;
 }
 
 /* CSS for debugging*/
@@ -132,7 +135,7 @@ main {
 }
 
 .midBox__r1container--left, .midBox__r1container--right {
-    width: 48%;
+    height: 36%;
 }
 
 .midBox__r2 {
@@ -197,8 +200,6 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 .midBox__r2 {
     display: flex;
