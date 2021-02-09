@@ -134,6 +134,16 @@ main {
     align-items: center;
 }
 
+/* Flexbox midBox and its elements */
+
+.midBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
