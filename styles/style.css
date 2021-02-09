@@ -112,7 +112,7 @@ main {
 }
 
 .topBox__r2Item {
-    width: 80%;
+    width: 90%;
     height: 2rem;
 }
 
@@ -126,7 +126,7 @@ main {
     align-items: center;
 }
 
-.topBox__r1 {
+.topBox__r1, .topBox__r2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
