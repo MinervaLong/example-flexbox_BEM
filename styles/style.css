@@ -131,6 +131,10 @@ main {
     height: 15.4rem;
 }
 
+.midBox__r1container--left, .midBox__r1container--right {
+    width: 40%;
+}
+
 .midBox__r2 {
     width: 35%;
     height: 22rem;
@@ -189,19 +193,13 @@ main {
 
 .midBox__r1container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.midBox__r1Item {
 
-}
-
-.midBox__r1LastI {
-    
-}
 
 .midBox__r2 {
     display: flex;
