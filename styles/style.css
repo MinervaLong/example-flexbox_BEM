@@ -21,6 +21,8 @@ body * {
     background-color: dimgray;
 }
 
+/* ----------------DESKTOP VIEW------------------------ */
+
 /* CSS for divs colours*/
 
 .topBox--color, .midBox--color, .bottomBox--color {
@@ -267,10 +269,73 @@ main {
     .midBox__r2Item{
         width:95%;
     }
-
-    
+   
 }
 
+/* ----------------MOBILE VIEW------------------------ */
+
+@media screen and (max-width:600px) {
+
+    main{
+        padding: 2%;
+    }
+   
+    .topBox {
+        height: 16rem;
+    }
+    .topBox__r1 {
+        height: 8rem;        
+        flex-direction: column;
+    }
+
+    .topBox__r1,
+    .topBox__r2,
+    .midBox__r1,
+    .midBox__r2,
+    .bottomBox__row {
+        width: 90%;
+    }
+
+    .topBox__r1Item,
+    .topBox__r1ItemM,    
+    .topBox__r2Item,
+    .midBox__r1Item,
+    .midBox__r2Item,
+    .midBox__r1LastI {
+        width: 90%;
+    }
+
+    .midBox {
+        height: 23rem;
+    }
+
+    .midBox__r1Elem1,.midBox__r1Elem2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center; 
+    }
+
+    .midBox__r1Item {
+        height: 1.5rem;
+    }
+
+    .midBox__r1 {
+        height: 12rem;
+    }
+
+    .midBox__r2 {
+        padding-top: 0;
+        justify-content: space-evenly;
+    }
+
+    .midBox__r1Item {
+        margin-top: 2%;
+    }
+
+}
 
 
 
