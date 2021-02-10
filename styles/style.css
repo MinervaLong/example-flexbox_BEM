@@ -1,29 +1,30 @@
-/* Reset values to get rid of browser's pre-set values*/
-
-html,body, main{
-    height: 100%;
-    
-}
+/* RESET VALUES*/
 
 * {
     margin: unset;
-    box-sizing: border-box;
+    box-sizing:unset;
     padding: unset;
     font-size: unset;
     color: unset;
     text-decoration: unset;
 }
 
-/* CSS for debugging*/
+html,body, main{
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+
+/* CSS for debugging
 
 body * {
     border: 1px solid red;
     background-color: dimgray;
-}
+}*/
 
 /* ----------------DESKTOP VIEW------------------------ */
 
-/* CSS for divs colours*/
+/* COLOURS*/
 
 .topBox--color, .midBox--color, .bottomBox--color {
     background-color: #000000;
@@ -69,19 +70,12 @@ body * {
     background-color: #8F6D1C;
 }
 
-/* Flex to Main */
 
-main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly; 
-    align-items: center;    
-}
 
-/* Size of the three principal divs and its elements */
+/* WIDTH, HEIGHT , MARGINS OF ELEMENTS*/
 
 .topBox, .midBox,.bottomBox {
+    margin-top: 2%;
     width: 95%;
 }
 
@@ -97,7 +91,7 @@ main {
     height: 6rem;
 }
 
-/* topBox */
+/* topBox elements */
 
 .topBox__r1, .topBox__r2 {
     width: 97%;
@@ -108,22 +102,19 @@ main {
     margin-bottom: 1rem;
 }
 
-.topBox__r1Item {
+.topBox__r1Item { /* Left and right items */
     width: 17%;
-    height: 2rem;
 }
 
-.topBox__r1ItemM {
+.topBox__r1ItemM { /* Middle item */
     width: 60%;
-    height: 2rem;
 }
 
-.topBox__r2Item, .bottomBox__row { /* bottomBox too */
+.topBox__r2Item, .bottomBox__row { /* bottomBox too since is equal */
     width: 97%;
-    height: 2rem;
 }
 
-/* midBox */
+/* midBox elements */
 
 .midBox__r1 {
     width: 60%;
@@ -131,33 +122,51 @@ main {
     margin-right: 1.7%;
 }
 
-.midBox__r2 {
-    width: 35%;
-    height: 14rem;
-    padding-top: 1.6%;
-}
-
 .midBox__r1Item {
     width: 48%;
-    height: 2rem;
 }
 
-.midBox__r1Elem1,.midBox__r1Elem2 {
+.midBox__r1Elem1,.midBox__r1Elem2 { /* The pair of items in a row position */
     width: 95%; 
 }
 
 .midBox__r1LastI {
     width: 95%;
-    height: 2rem;
+}
+
+.midBox__r2 {
+    width: 35%;
+    height: 14rem;
 }
 
 .midBox__r2Item {
     width: 90%;
-    height: 2rem;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 
-/* Flexbox topBox and its elements */
+/* Items height */
+
+.topBox__r1Item,
+.topBox__r1ItemM,
+.topBox__r2Item,
+.midBox__r1Item,
+.midBox__r1LastI,
+.midBox__r2Item,
+.bottomBox__row {
+    height: 2rem;
+}
+
+/* _________FLEXBOX MAIN____________ */
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /*justify-content: space-evenly;*/ 
+    align-items: center;    
+}
+
+/* FLEXBOX TOPBOX */
 
 .topBox {
     display: flex;
@@ -167,7 +176,7 @@ main {
     align-items: center;
 }
 
-.topBox__r1, .topBox__r2, .bottomBox { /* bottomBox too*/
+.topBox__r1, .topBox__r2, .bottomBox { /* bottomBox too since it's the same */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -175,7 +184,7 @@ main {
     align-items: center;
 }
 
-/* Flexbox midBox and its elements */
+/* FLEXBOX MIDBOX */
 
 .midBox {
     display: flex;
@@ -214,12 +223,9 @@ main {
 
 @media screen and (max-width:1023px){
 
-    .topBox {
-        height: 12rem;
-    }
     .midBox--color{
         background-color: #feff03; 
-    }
+    }   
 
     .midBox {
         height: 22rem;
@@ -230,13 +236,11 @@ main {
         align-items: center;
     }
 
-    .topBox__r1,
-    .topBox__r2,
-    .midBox__r1,
-    .midBox__r2,
-    .bottomBox__row { 
-        width: 95%;
-    }
+    .topBox {
+        height: 12rem;
+    }  
+    
+    /* ROWS  OF BOXES */
 
     .topBox__r1, .topBox__r2, .bottomBox {
         height: 4rem;
@@ -249,7 +253,18 @@ main {
 
     .midBox__r2 {
         height: 7rem;
+        justify-content: space-evenly;
     }
+
+    .topBox__r1,
+    .topBox__r2,
+    .midBox__r1,
+    .midBox__r2,
+    .bottomBox__row { 
+        width: 95%;
+    }
+
+    /* ITEMS */
 
     .topBox__r1Item,
     .topBox__r1ItemM,
@@ -269,6 +284,11 @@ main {
     .midBox__r2Item{
         width:95%;
     }
+
+    .midBox__r2Item {
+        margin-top: 0;        
+    }
+    
    
 }
 
@@ -276,16 +296,40 @@ main {
 
 @media screen and (max-width:600px) {
 
-    main{
-        padding: 2%;
-    }
-   
     .topBox {
         height: 16rem;
     }
+
     .topBox__r1 {
         height: 8rem;        
         flex-direction: column;
+    }
+
+    .midBox {
+        height: 23rem;
+    }
+
+    .midBox__r1 {
+        height: 12rem;
+    }
+
+    .midBox__r1Elem1,.midBox__r1Elem2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center; 
+    }
+
+    .midBox__r1Item {
+        height: 1.5rem;
+        margin-top: 2%;
+    }   
+
+    .midBox__r2 {
+        padding-top: 0;
+        justify-content: space-evenly;
     }
 
     .topBox__r1,
@@ -303,37 +347,7 @@ main {
     .midBox__r2Item,
     .midBox__r1LastI {
         width: 90%;
-    }
-
-    .midBox {
-        height: 23rem;
-    }
-
-    .midBox__r1Elem1,.midBox__r1Elem2 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center; 
-    }
-
-    .midBox__r1Item {
-        height: 1.5rem;
-    }
-
-    .midBox__r1 {
-        height: 12rem;
-    }
-
-    .midBox__r2 {
-        padding-top: 0;
-        justify-content: space-evenly;
-    }
-
-    .midBox__r1Item {
-        margin-top: 2%;
-    }
+    }   
 
 }
 
