@@ -208,6 +208,70 @@ main {
 }
 
 
+/* ----------------TABLET VIEW------------------------ */
+
+@media screen and (max-width:1023px){
+
+    .topBox {
+        height: 12rem;
+    }
+    .midBox--color{
+        background-color: #feff03; 
+    }
+
+    .midBox {
+        height: 22rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .topBox__r1,
+    .topBox__r2,
+    .midBox__r1,
+    .midBox__r2,
+    .bottomBox__row { 
+        width: 95%;
+    }
+
+    .topBox__r1, .topBox__r2, .bottomBox {
+        height: 4rem;
+    }
+
+    .midBox__r1 {
+        margin-right: 0;
+        height: 11rem;
+    }
+
+    .midBox__r2 {
+        height: 7rem;
+    }
+
+    .topBox__r1Item,
+    .topBox__r1ItemM,
+    .midBox__r1Item,
+    .midBox__r1LastI,
+    .midBox__r2Item,
+    .topBox__r2Item,
+    .bottomBox__row {
+        height: 1.5rem;
+    }
+
+    .topBox__r1Item {
+        width: 15%;
+    }
+
+    .topBox__r2Item,
+    .midBox__r2Item{
+        width:95%;
+    }
+
+    
+}
+
+
 
 
 
