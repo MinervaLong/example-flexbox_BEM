@@ -1,29 +1,30 @@
-/* Reset values to get rid of browser's pre-set values*/
-
-html,body, main{
-    height: 100%;
-    
-}
+/* RESET VALUES*/
 
 * {
     margin: unset;
-    box-sizing: border-box;
+    box-sizing:unset;
     padding: unset;
     font-size: unset;
     color: unset;
     text-decoration: unset;
 }
 
-/* CSS for debugging*/
+html,body, main{
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+
+/* CSS for debugging
 
 body * {
     border: 1px solid red;
     background-color: dimgray;
-}
+}*/
 
 /* ----------------DESKTOP VIEW------------------------ */
 
-/* CSS for divs colours*/
+/* COLOURS*/
 
 .topBox--color, .midBox--color, .bottomBox--color {
     background-color: #000000;
@@ -69,7 +70,7 @@ body * {
     background-color: #8F6D1C;
 }
 
-/* Flex to Main */
+/* FLEXBOX MAIN */
 
 main {
     display: flex;
@@ -79,7 +80,7 @@ main {
     align-items: center;    
 }
 
-/* Size of the three principal divs and its elements */
+/* WIDTH, HEIGHT , MARGINS OF ELEMENTS*/
 
 .topBox, .midBox,.bottomBox {
     width: 95%;
@@ -110,17 +111,14 @@ main {
 
 .topBox__r1Item {
     width: 17%;
-    height: 2rem;
 }
 
 .topBox__r1ItemM {
     width: 60%;
-    height: 2rem;
 }
 
 .topBox__r2Item, .bottomBox__row { /* bottomBox too */
     width: 97%;
-    height: 2rem;
 }
 
 /* midBox */
@@ -139,7 +137,6 @@ main {
 
 .midBox__r1Item {
     width: 48%;
-    height: 2rem;
 }
 
 .midBox__r1Elem1,.midBox__r1Elem2 {
@@ -148,16 +145,28 @@ main {
 
 .midBox__r1LastI {
     width: 95%;
-    height: 2rem;
 }
 
 .midBox__r2Item {
     width: 90%;
-    height: 2rem;
     margin-top: 2%;
 }
 
-/* Flexbox topBox and its elements */
+/* Items height */
+
+.topBox__r1Item,
+.topBox__r1ItemM,
+.topBox__r2Item,
+.midBox__r1Item,
+.midBox__r1LastI,
+.midBox__r2Item,
+.bottomBox__row {
+    height: 2rem;
+}
+
+
+
+/* FLEXBOX TOPBOX */
 
 .topBox {
     display: flex;
@@ -175,7 +184,7 @@ main {
     align-items: center;
 }
 
-/* Flexbox midBox and its elements */
+/* FLEXBOX MIDBOX */
 
 .midBox {
     display: flex;
