@@ -113,7 +113,7 @@ body * {
     width: 97%;
 }
 
-/* midBox */
+/* midBox elements */
 
 .midBox__r1 {
     width: 60%;
@@ -121,21 +121,21 @@ body * {
     margin-right: 1.7%;
 }
 
-.midBox__r2 {
-    width: 35%;
-    height: 14rem;
-}
-
 .midBox__r1Item {
     width: 48%;
 }
 
-.midBox__r1Elem1,.midBox__r1Elem2 {
+.midBox__r1Elem1,.midBox__r1Elem2 { /* The pair of items in a row position */
     width: 95%; 
 }
 
 .midBox__r1LastI {
     width: 95%;
+}
+
+.midBox__r2 {
+    width: 35%;
+    height: 14rem;
 }
 
 .midBox__r2Item {
