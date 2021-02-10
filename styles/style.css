@@ -175,7 +175,7 @@ main {
     align-items: center;
 }
 
-.topBox__r1, .topBox__r2, .bottomBox { /* bottomBox too*/
+.topBox__r1, .topBox__r2, .bottomBox { /* bottomBox too since it's the same */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
