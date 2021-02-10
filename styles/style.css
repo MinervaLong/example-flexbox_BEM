@@ -252,6 +252,7 @@ main {
 
     .midBox__r2 {
         height: 7rem;
+        justify-content: space-evenly;
     }
 
     .topBox__r1,
@@ -284,7 +285,7 @@ main {
     }
 
     .midBox__r2Item {
-        margin-top: 10%;        
+        margin-top: 0;        
     }
     
    
