@@ -101,15 +101,15 @@ body * {
     margin-bottom: 1rem;
 }
 
-.topBox__r1Item {
+.topBox__r1Item { /* Left and right items */
     width: 17%;
 }
 
-.topBox__r1ItemM {
+.topBox__r1ItemM { /* Middle item */
     width: 60%;
 }
 
-.topBox__r2Item, .bottomBox__row { /* bottomBox too */
+.topBox__r2Item, .bottomBox__row { /* bottomBox too since is equal */
     width: 97%;
 }
 
@@ -124,7 +124,6 @@ body * {
 .midBox__r2 {
     width: 35%;
     height: 14rem;
-    padding-top: 1.6%;
 }
 
 .midBox__r1Item {
@@ -141,7 +140,7 @@ body * {
 
 .midBox__r2Item {
     width: 90%;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 
 /* Items height */
@@ -278,6 +277,11 @@ main {
     .midBox__r2Item{
         width:95%;
     }
+
+    .midBox__r2Item {
+        margin-top: 10%;        
+    }
+    
    
 }
 
